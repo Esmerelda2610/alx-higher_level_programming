@@ -4,7 +4,7 @@
 
 import sys
 import unittest
-import io
+from io import StringIO
 from unittest.mock import patch
 from models.rectangle import Rectangle
 from models.base import Base
@@ -353,6 +353,7 @@ class TestRectangleMethods(unittest.TestCase):
 
     def test_load_from_file(self):
         """ Test load JSON file """
+        Rectangle.save_to_file([])
         load_file = Rectangle.load_from_file()
         self.assertEqual(load_file, [])
 

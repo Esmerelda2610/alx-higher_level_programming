@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """ Module for test Square class """
 
-
-import io
 import sys
 import unittest
+from io import StringIO
+from models.rectangle import Rectangle
 from unittest.mock import patch
 from models.square import Square
 from models.base import Base

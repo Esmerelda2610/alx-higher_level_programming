@@ -4,9 +4,11 @@
 import os
 import io
 import unittest
+from io import StringIO
 from models.base import Base
 from models.square import Square
 from models.rectangle import Rectangle
+from unittest.mock import patch
 
 
 class TestBaseMethods(unittest.TestCase):
